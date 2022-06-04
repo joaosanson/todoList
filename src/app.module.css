@@ -1,0 +1,12 @@
+.container {
+  max-width: 500px;
+  margin: -1.35rem auto 0 auto;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

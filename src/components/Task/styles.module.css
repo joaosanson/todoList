@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--gray-500);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.wrapper input[type="checkbox"] {
+  display: none;
+}
+
+.wrapper > p {
+  margin-left: 2rem;
+  padding-right: 1rem;
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: transparent;
+  border: 2px solid var(--blue-300);
+  border-radius: 50%;
+}
+
+.wrapper:hover input ~ .checkmark {
+  background-color: var(--purple-200);
+}
+
+.wrapper input:checked ~ .checkmark {
+  background-color: var(--purple-200);
+}
+
+.wrapper .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid var(--gray-200);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.wrapper input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container > button {
+  background-color: transparent;
+  border: 0;
+  color: var(--gray-300);
+  line-height: 0;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: color 0.2s;
+}
+
+.container > button:hover {
+  color: var(--red-400);
+}
+
+.wrapper > input:checked {
+  background-color: var(--purple-200);
+}

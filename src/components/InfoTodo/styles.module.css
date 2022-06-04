@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.wrapper p {
+  font-size: 0.7rem;
+  color: var(--blue-200);
+}
+
+p.completed {
+  color: var(--purple-200);
+}
+
+.wrapper span {
+  font-size: 0.7rem;
+  background-color: var(--gray-500);
+  padding: 0.2rem 0.4rem;
+  border-radius: 8px;
+  color: var(--gray-200);
+}
